@@ -6,7 +6,6 @@ import academiadigital.servicio_estudiantes.dto.EstudianteDto;
 import academiadigital.servicio_estudiantes.exception.RecursoNoEncontradoException;
 import academiadigital.servicio_estudiantes.model.Estudiante;
 import academiadigital.servicio_estudiantes.repository.EstudiantesRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
