@@ -14,49 +14,44 @@ public class Estudiante {
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Configura el auto increment
     private Long id;
 
+    @Column(nullable = false)
     private String nombre;
+
+    @Column(nullable = false)
     private String apellido;
 
-    @Column(unique = true)
+    @Column(nullable = false, unique = true)
     private String email;
     private LocalDateTime fechaCreacion;
 
+    // SETTERS Y GETTERS QUE QUIZA NO DEBERIAN ESTA AQUI---- PENDIENTE POR MODIFICAR
     public void setId(Long id) {
         this.id = id;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
-
     public void setFechaCreacion(LocalDateTime fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
     }
-
     public Long getId() {
         return id;
     }
-
     public String getNombre() {
         return nombre;
     }
-
     public String getApellido() {
         return apellido;
     }
-
     public String getEmail() {
         return email;
     }
-
     public LocalDateTime getFechaCreacion() {
         return fechaCreacion;
     }
