@@ -1,8 +1,6 @@
 package academiadigital.servicio_estudiantes.controller;
 //Esta es la capa que recibe las peticiones HTTP y usa el servicio.
 
-
-import academiadigital.servicio_estudiantes.dto.EstudianteDto;
 import academiadigital.servicio_estudiantes.dto.EstudianteRequestDto;
 import academiadigital.servicio_estudiantes.dto.EstudianteResponseDto;
 import academiadigital.servicio_estudiantes.model.Estudiante;
