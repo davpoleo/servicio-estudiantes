@@ -6,7 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
-@Repository //Bean que indica que esta es la capa de persistencia
-public interface EstudiantesRepository extends JpaRepository<Estudiante, Long>  {
+import java.util.Optional;
 
+@Repository //Bean que indica que esta es la capa de persistencia
+public interface EstudiantesRepository extends JpaRepository<Estudiante, Long>, JpaSpecificationExecutor<Estudiante>  {
+    Optional<Estudiante> findByEmail(String email);
 }

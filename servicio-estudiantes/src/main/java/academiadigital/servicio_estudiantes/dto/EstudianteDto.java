@@ -14,9 +14,6 @@ public class EstudianteDto {
     private LocalDateTime fechaCreacion;
 
     //SETTERS Y GETTERS
-
-
-
     public void setId(Long id) {
         this.id = id;
     }
