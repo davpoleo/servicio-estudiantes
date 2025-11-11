@@ -60,9 +60,9 @@ public class Estudiante {
 }
 
 /* *
--   La configuracion en produccion de los Yaml tiene que ponerse en validate, en desarrollo se pone en Update
+-   La configuracion en produccion de los Yaml tiene que ponerse en validate, en desarrollo se pone en Update [LISTO]
 -   En el modelo usar @Data (trae implicito, setter, getter y los args constructors)
-    y dejar el @NoArgsConstructor @AllArgsConstructor
+    y dejar el @NoArgsConstructor @AllArgsConstructor [REVISAR] - ME SIGUE SIN FUNCIONAR
 -   En el repository usa el JpaSpecificationExecutor permite hacer consultas dinamicas y hay que estar pendiente
     de la implementacion de la clase repository.
 -   Tambien en el service se usa el polimorfismo con el overrride

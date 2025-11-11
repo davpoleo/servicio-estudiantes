@@ -22,7 +22,7 @@ public class EstudianteController {
         this.estudianteService = estudianteService;
     }
 
-    @PostMapping
+    @PostMapping("/crear")
     //Con el @valid: Spring verifica las anotaciones del DTO (not Blank, email, etc) antes de ejecutar el metodo
     public ResponseEntity<EstudianteResponseDto> crearEstudiante(@Valid @RequestBody EstudianteRequestDto request){
         EstudianteResponseDto estudianteCreado = estudianteService.crearEstudiante(request);
@@ -35,7 +35,7 @@ public class EstudianteController {
         return ResponseEntity.ok(estudianteService.obtenerEstudiantePorId(id));
     }
 
-    @GetMapping
+    @GetMapping("/todos")
     public ResponseEntity<List<EstudianteResponseDto>> obtenerTodos(){
         return ResponseEntity.ok(estudianteService.obtenerTodosLosEstudiantes());
     }

@@ -39,7 +39,7 @@ public class EstudianteServiceImpl implements EstudianteService {
         estudiante.setEmail(request.email());
         estudiante.setFechaCreacion(LocalDateTime.now());
 
-        //Crea un bojeto estudiante para pasaselo a un mapper, antes lo tenia en el mismo codigo ahora esta en un
+        //Crea un objeto estudiante para pasaselo a un mapper, antes lo tenia en el mismo codigo ahora esta en un
         //paquete aparte y una clase mapper desacoplada, la relacion del mapper la hace en a inyeccion mas arriba.
         Estudiante nuevoEstudiante = estudiantesRepository.save(estudiante);
 

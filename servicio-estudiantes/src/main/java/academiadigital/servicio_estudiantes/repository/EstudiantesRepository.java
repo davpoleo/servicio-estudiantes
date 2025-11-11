@@ -12,3 +12,13 @@ import java.util.Optional;
 public interface EstudiantesRepository extends JpaRepository<Estudiante, Long>, JpaSpecificationExecutor<Estudiante>  {
     Optional<Estudiante> findByEmail(String email);
 }
+/*
+* Hacer el uso de Interface indica que se esta usando Spring Data JPA, el cual aplica el patron de programacion
+* orientada a interfaces.
+* La interfaz actua como un contrato que define que operaciones de acceso a la base de datos estan disponibles
+* por ejemplo el uso de un (CRUD), no es necesario escribir una implementacion ya el Spring Data JPA lo hace
+* de forma automatica
+*
+* Un Mock es una implementacion simulada de la interfaz
+*
+* */

@@ -26,3 +26,11 @@ public interface EstudianteService {
     //OBTENER TODOS LOS ESTUDIANTES
     List<EstudianteResponseDto> obtenerTodosLosEstudiantes();
 }
+/*
+* Los Objetos Request y Response en la definicion del Service implican el uso del patron de diseño  de
+* de aplicaciones (Data Transfer Object - DTO)
+*
+* Cuando un usuario envia una peticion HTTP a la API, el CONTROLLER recibe los datos Json del cuerpo, se
+* convierte esos datos directamente a un objeto EstudianteResponseDto, el CONTROLLER llama al servicio de
+* estudiante y le pasa ese request como argumento
+* */
