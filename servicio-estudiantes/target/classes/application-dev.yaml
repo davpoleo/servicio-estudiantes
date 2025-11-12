@@ -3,4 +3,25 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_estudiantes_dev?serverTimezone=UTC
     username: root
-    password:
+    password: asd123asd
+
+
+    # En Docker se debe usar los siguientes comandos
+    # Crear archivo de configuracion docker-compose.yml
+    # abrir consola y hacer cd a la carpeta resourse del proyecto donde esta la configuracion
+    # Ejecutar los siguientes comandos en el CMD:
+    # docker compose up -d    (Crea contenedor y base de datos nuevos)
+    # docker ps               (para ver el status del MySQL)
+    # docker compose logs db  (Para ver el log de errores)
+    # docker compose stop     (Para detener el contenedor)
+    # docker compose start    (inicia un contenedor stop con estado exited)
+    # docker compose down     (detiene y elimina el contenedor MYsQl de la red pero mantiene la data)
+    # docker compose down -v  (ELIMINA ABSOLUTAMENTE TODO)
+    #-----------------------------------------------------------------------
+    # docker compose exec db mysql -u root -p     (para acceder a la base de datos - ingresa tu pswrd)
+    # SHOW DATABASES;
+    # USE db_estudiantes_dev;
+    # SHOW TABLES;
+    # DESC estudiantes;
+    #
+    # exit;
