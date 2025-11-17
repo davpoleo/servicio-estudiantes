@@ -9,6 +9,8 @@ spring:
     # En Docker se debe usar los siguientes comandos
     # Crear archivo de configuracion docker-compose.yml
     # abrir consola y hacer cd a la carpeta resourse del proyecto donde esta la configuracion
+    # C:\Users\David Poleo\IdeaProjects\servicio-estudiantes\servicio-estudiantes\src\main\resources
+    # C:\Users\David Poleo\IdeaProjects\servicio_cursos\src\main\resources
     # Ejecutar los siguientes comandos en el CMD:
     # docker compose up -d    (Crea contenedor y base de datos nuevos)
     # docker ps               (para ver el status del MySQL)
